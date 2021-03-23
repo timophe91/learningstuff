@@ -7,3 +7,4 @@ cp getHosts.sh ~/ctf/
 cp nm.sh ~/ctf/
 cp sfiles.sh ~/ctf/
 sudo ./getHosts.sh > ~/ctf/t
+cd ~/ctf
