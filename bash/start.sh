@@ -2,7 +2,7 @@
 mkdir -p ~/ctf
 touch ~/ctf/t
 touch ~/ctf/e
-cp -R ../python4fun ~/ctf/
+cp ../python4fun/* ~/ctf/
 cp getHosts.sh ~/ctf/
 cp nm.sh ~/ctf/
 cp sfiles.sh ~/ctf/
