@@ -10,6 +10,10 @@ OR='\033[0;33m'
 PURP='\033[0;35m'
 NC='\033[0m'
 
+def is_comment(s):
+    # return true if a line starts with #
+    return s.startswith('#')
+
 #run scripts again all targets
 def runAll(targets, scripts):
     for t in targets:
@@ -35,10 +39,12 @@ if __name__ == "__main__":
     f = open(sys.argv[1], 'r') # parse targets into list, sepearate by new line
     targets = f.readlines()
     targets = [x.strip() for x in targets] #strip e.g. \n
+    targets = [i for i in targets if not(is_comment(i))]
     f.close()
     f = open(sys.argv[2], 'r') # parse scripts into list
     scripts = f.readlines()
-    scripts = [x.strip() for x in scripts] 
+    scripts = [x.strip() for x in scripts]
+    scripts = [i for i in scripts if not(is_comment(i))]
     runAll(targets, scripts)
   except Exception as e:
     print("An exception occurred\n" + str(e))
