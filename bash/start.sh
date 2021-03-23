@@ -8,3 +8,7 @@ cp nm.sh ~/ctf/
 cp sfiles.sh ~/ctf/
 sudo ./getHosts.sh > ~/ctf/t
 cd ~/ctf
+rm *.txt
+chmod +x *.exp
+chmod +x *.sh
+chmod +x *.py
