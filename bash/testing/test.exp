@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+
+set timeout -1
+spawn ./sampleExploit.sh
+
+expect "And u r?"
+send -- "bot\r"
+
+#expect "What is your favorite programming language?\r
+#Your answer: "
+#send -- "Java\r"
+
+expect eof
