@@ -14,3 +14,4 @@ rm *.txt
 chmod +x *.exp
 chmod +x *.sh
 chmod +x *.py
+gedit &
