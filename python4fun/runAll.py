@@ -17,9 +17,9 @@ def is_comment(s):
 #run scripts again all targets
 def runAll(targets, scripts):
     for t in targets:
-        print("\n" + PURP + "########"+OR+" Target: "+ t + NC + "\n")
+        print("\n" + PURP + "######"+OR+" Target: "+ t + NC + "\n")
         for s in scripts:
-            print("\n" + PURP + "####" + LBUE + " Running: " + s + NC + "\n")
+            print("\n" + PURP + "[+]" + LBUE + " Running: " + s + NC + "\n")
             os.system(s + " " + t)
     print(RED + "##################################################")
     print("###################### END #######################" + NC + "\n")
