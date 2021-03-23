@@ -2,13 +2,6 @@
 import sys
 import os
 
-RED='\033[0;31m'    # bunch of bash colours
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-LBUE='\033[1;34m'
-OR='\033[0;33m'
-PURP='\033[0;35m'
-NC='\033[0m'
 
 def is_comment(s):
     # return true if a line starts with #
