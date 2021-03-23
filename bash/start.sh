@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir ~/ctf
+mkdir -p ~/ctf
 touch ~/ctf/t
 touch ~/ctf/e
 cp -R ../python4fun ~/ctf/
