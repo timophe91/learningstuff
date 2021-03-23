@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo apt install nmap
+sudo apt install gedit
 mkdir -p ~/ctf
 touch ~/ctf/t
 touch ~/ctf/e
