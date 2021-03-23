@@ -2,7 +2,7 @@
 import sys
 import os
 
-RED='\033[0;31m'    # bunch of colours
+RED='\033[0;31m'    # bunch of bash colours
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 LBUE='\033[1;34m'
@@ -10,6 +10,7 @@ OR='\033[0;33m'
 PURP='\033[0;35m'
 NC='\033[0m'
 
+#run scripts again all targets
 def runAll(targets, scripts):
     for t in targets:
         print("\n" + PURP + "########"+OR+" Target: "+ t + NC + "\n")
@@ -21,7 +22,7 @@ def runAll(targets, scripts):
 
 
 if __name__ == "__main__":
-  if len(sys.argv) != 3:
+  if len(sys.argv) != 3: #test for arguments
     print("Usage: " + sys.argv[0] + " <path/to/targets> <path/to/scripts>\n")
     sys.exit(-1)
 
@@ -33,7 +34,7 @@ if __name__ == "__main__":
     print("Scripts File: " + str(sys.argv[2]))
     f = open(sys.argv[1], 'r') # parse targets into list, sepearate by new line
     targets = f.readlines()
-    targets = [x.strip() for x in targets] 
+    targets = [x.strip() for x in targets] #strip e.g. \n
     f.close()
     f = open(sys.argv[2], 'r') # parse scripts into list
     scripts = f.readlines()
