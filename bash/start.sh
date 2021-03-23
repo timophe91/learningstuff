@@ -6,4 +6,4 @@ cp -R ../python4fun ~/ctf/
 cp getHosts.sh ~/ctf/
 cp nm.sh ~/ctf/
 cp sfiles.sh ~/ctf/
-sudo ./getHosts.sh > ctf/t
+sudo ./getHosts.sh > ~/ctf/t
