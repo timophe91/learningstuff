@@ -7,7 +7,7 @@ touch ~/ctf/e
 cp ../python4fun/* ~/ctf/
 cp getHosts.sh ~/ctf/
 cp nm.sh ~/ctf/
-cp sfiles.sh ~/ctf/
+cp findString.sh ~/ctf/
 sudo ./getHosts.sh > ~/ctf/t
 cd ~/ctf
 rm *.txt
