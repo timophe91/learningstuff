@@ -39,11 +39,11 @@ if __name__ == "__main__":
     f = open(sys.argv[1], 'r') # parse targets into list, sepearate by new line
     targets = f.readlines()
     targets = [x.strip() for x in targets] #strip e.g. \n
-    targets = [i for i in targets if not(is_comment(i))]
+    targets = [i for i in targets if not(is_comment(i))] #remove line starting with # (comments)
     f.close()
     f = open(sys.argv[2], 'r') # parse scripts into list
     scripts = f.readlines()
-    scripts = [x.strip() for x in scripts]
+    scripts = [x.strip() for x in scripts] 
     scripts = [i for i in scripts if not(is_comment(i))]
     runAll(targets, scripts)
   except Exception as e:
